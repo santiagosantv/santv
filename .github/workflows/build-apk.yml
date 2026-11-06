@@ -22,7 +22,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      -       - name: Preparar Android
+          - name: Preparar Android
         uses: android-actions/setup-android@v3
 
       - name: Aceptar licencias Android
