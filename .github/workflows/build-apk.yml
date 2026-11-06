@@ -22,10 +22,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Preparar Android
+      -       - name: Preparar Android
         uses: android-actions/setup-android@v3
-        with:
-          accept-android-sdk-licenses: true.
+
+      - name: Aceptar licencias Android
+        run: yes | sdkmanager --licenses
 
       - name: Instalar SDK
         run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
